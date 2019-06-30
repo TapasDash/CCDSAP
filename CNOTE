@@ -1,0 +1,11 @@
+for _ in range(int(input())):
+        X,Y,K,N = map(int,input().split())
+        books = []
+    for _ in range(N):
+        P,C = map(int,input().split())
+    books.append((P,C))
+    for P,C in books:
+        if P >= X - Y and C >= K:
+            print('LuckyChef')
+        else:
+            print('UnluckyChef')
